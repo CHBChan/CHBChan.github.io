@@ -6,4 +6,7 @@ import svgr from 'vite-plugin-svgr'
 export default defineConfig({
   base: '/portfolio/',
   plugins: [react(), svgr()],
+  resolve: {
+    preserveSymlinks: true,
+  }
 })
