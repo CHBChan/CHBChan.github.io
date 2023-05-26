@@ -1,4 +1,3 @@
-import React from 'react'
 import vigilantes from '../assets/vigilantes.png';
 import confessional from '../assets/confessional.png';
 import { FaGithub } from "react-icons/fa";

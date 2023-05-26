@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
@@ -17,7 +16,7 @@ function App() {
           <Link className='font-bold text-2xl hover:underline' to='/aboutme'>About Me</Link>
         </nav>
         <Routes>
-          <Route path='/' element={<Home/>}/>
+          <Route path='/*' element={<Home/>}/>
           <Route path='/projects' element={<Projects/>}/>
           <Route path='/aboutme' element={<AboutMe/>}/>
           <Route path='/games' element={<Games/>}/>

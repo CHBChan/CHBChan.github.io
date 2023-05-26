@@ -1,4 +1,3 @@
-import React from 'react';
 import { ReactComponent as Portrait } from '../assets/portrait.svg';
 import { DiHtml5, DiCss3, DiJavascript, DiReact, DiPython, DiJava, DiDatabase, DiGit  } from "react-icons/di";
 import { SiCplusplus, SiCsharp } from "react-icons/si";
