@@ -32,6 +32,11 @@ function Home() {
                         <p className='text-2xl mt-4'>
                             I am currently {employStatus}.
                         </p>
+                        <a href='src/assets/ChingHangBennyChan-Resume.pdf' download>
+                            <button className='mt-8 px-4 py-4 border rounded shadow text-2xl'>
+                                Download My Resume
+                            </button>
+                        </a>
                     </div>
                     <span className='basis-1/4'></span>
                 </div>
