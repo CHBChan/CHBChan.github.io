@@ -32,7 +32,7 @@ function GameProjects() {
           <li><a href="https://zeldauniverse.net/media/fonts/" target="_blank">NES Font</a></li>
         </ul>
         <div className="tlozDL flex gap-4 mt-4">
-          <a href='src/assets/zelda-windows.zip'>
+          <a href='src/assets/zelda-windows.zip' download>
             <button className='px-4 py-4 min-w-180px border-4 rounded shadow text-xl'>
               <div className='flex items-center gap-4'>
                 Download
@@ -40,7 +40,7 @@ function GameProjects() {
               </div>
             </button>
           </a>
-          <a href='src/assets/zelda-macos.zip'>
+          <a href='src/assets/zelda-macos.zip' download>
             <button className='px-4 py-4 min-w-180px border-4 rounded shadow text-xl'>
               <div className='flex items-center gap-4'>
                 Download
@@ -74,7 +74,7 @@ function GameProjects() {
           <li><a href="https://freemusicarchive.org/music/Ask%20Again/flailing-dirge-energy-emotion-1/a-state-of-despair" target="_blank">Final boss theme - A State of Despair by Mid-Air Machine</a>&emsp;<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">License (No change)</a></li>
         </ul>
         <div className="insanityDL flex gap-4 mt-4">
-          <a href='src/assets/insanity-windows.zip'>
+          <a href='src/assets/insanity-windows.zip' download>
             <button className='px-4 py-4 border-4 rounded shadow text-xl'>
               <div className='flex items-center gap-4'>
                 Download
@@ -82,7 +82,7 @@ function GameProjects() {
               </div>
             </button>
           </a>
-          <a href='src/assets/insanity-macos.zip'>
+          <a href='src/assets/insanity-macos.zip' download>
             <button className='px-4 py-4 border-4 rounded shadow text-xl'>
               <div className='flex items-center gap-4'>
                 Download
@@ -113,7 +113,7 @@ function GameProjects() {
           <li><a href="https://thoseawesomeguys.com/prompts/" target="_blank">Control prompt: Xelu's FREE Controllers & Keyboard PROMPTS</a></li>
         </ul>
         <div className="mmDL flex gap-4 mt-4 mb-16">
-          <a href='src/assets/mm-windows.zip'>
+          <a href='src/assets/mm-windows.zip' download>
             <button className='px-4 py-4 border-4 rounded shadow text-xl'>
               <div className='flex items-center gap-4'>
                 Download 
@@ -121,7 +121,7 @@ function GameProjects() {
               </div>
             </button>
           </a>
-          <a href='src/assets/mm-macos.zip'>
+          <a href='src/assets/mm-macos.zip' download>
             <button className='px-4 py-4 border-4 rounded shadow text-xl'>
               <div className='flex items-center gap-4'>
                 Download
