@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import AboutMe from './pages/AboutMe';
 import Games from './pages/Games';
+import GameProjects from './pages/GameProjects';
 import '@fontsource/pangolin';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path='/projects' element={<Projects/>}/>
           <Route path='/aboutme' element={<AboutMe/>}/>
           <Route path='/games' element={<Games/>}/>
+          <Route path='/gameProjects' element={<GameProjects/>}/>
         </Routes>
       </Router>
     </div>

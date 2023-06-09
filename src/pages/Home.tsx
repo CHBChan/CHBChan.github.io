@@ -4,13 +4,6 @@ import { SiCplusplus, SiCsharp } from "react-icons/si";
 
 function Home() {
 
-    enum employment {
-        unemployed = 0,
-        employed = 1
-    }
-
-    const employStatus = process.env.employment ?? employment[employment.unemployed];
-
     return (
 
         <div className='pageContent flex flex-col justify-center gap-16 mx-8'>
@@ -25,12 +18,8 @@ function Home() {
                             It's quite a mouthful, so I usually go by Benny.
                         </p>
                         <p className='text-2xl'>
-                            My main interest lies in web development, <br/>
-                            but I am also capable of software development. <br/>
+                            I like creating things. <br/>
                             In case it isn't obvious, I'm not proficient in graphic design.
-                        </p>
-                        <p className='text-2xl mt-4'>
-                            I am currently {employStatus}.
                         </p>
                         <a href='src/assets/ChingHangBennyChan-Resume.pdf' download>
                             <button className='mt-8 px-4 py-4 border rounded shadow text-2xl'>
