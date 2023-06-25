@@ -11,7 +11,7 @@ function AboutMe() {
             <div className='contentWrapper max-w-sm text-center'>
                 <p className='font-bold text-5xl'>More about me</p>
                 <p className='text-xl mt-4'>
-                    Wow, I'm surprised you cared enough to click that link.
+                    Wow, thanks for clicking that link!
                     If all you need is my contact information, you can find the information <a href='#contactInfo'>HERE</a>.
                 </p>
                 <p className='text-xl mt-4'>
@@ -21,8 +21,8 @@ function AboutMe() {
                 </p>
                 <p className='text-xl mt-4'>
                     Recently, I've been learning to write fantasy in hopes to someday complete a fantasy series.
-                    If you think about it, there are parallels between writing fiction and coding. 
-                    Both involve weaving characters together to create something beautiful.
+                    I think that there are parallels between writing fiction and coding since 
+                    both involve weaving characters together to create something beautiful.
                 </p>
                 <p id='contactInfo' className="font-bold text-xl mt-4">
                     I'm generally a private person, which is why I have the image of a stick figure in the homepage instead of my face, 
