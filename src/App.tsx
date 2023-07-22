@@ -1,27 +1,45 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { useState } from 'react';
+
 import Home from './pages/Home';
-import Projects from './pages/Projects';
+import MyProjects from './pages/MyProjects';
 import AboutMe from './pages/AboutMe';
-import Games from './pages/Games';
-import GameProjects from './pages/GameProjects';
+import Resume from './pages/Resume';
 import '@fontsource/pangolin';
 
+const linkList : linkInfo[] = [
+  {
+    title: 'Home',
+    path: '/'
+  },
+  {
+    title: 'Projects',
+    path: '/myprojects'
+  },
+  {
+    title: 'About Me',
+    path: '/aboutme'
+  }
+];
+
 function App() {
+  const [currLink, setCurrLink] = useState<string>('/');
 
   return (
     <div className='mainContent'>
       <Router>
         <nav className='navBar flex gap-8 items-center justify-center mx-4 my-4'>
-          <Link className='font-bold text-2xl hover:underline' to='/'>Home</Link>
-          <Link className='font-bold text-2xl hover:underline' to='/projects'>Projects</Link>
-          <Link className='font-bold text-2xl hover:underline' to='/aboutme'>About Me</Link>
+          {linkList.map((linkI : linkInfo, index : number) => {
+            return (
+              <Link className='font-bold text-2xl border-b-2 border-transparent hover:border-orange-400' to={linkI.path}>{linkI.title}</Link>
+            )
+          })}
         </nav>
         <Routes>
           <Route path='/*' element={<Home/>}/>
-          <Route path='/projects' element={<Projects/>}/>
+          <Route path='/myprojects' element={<MyProjects/>}/>
           <Route path='/aboutme' element={<AboutMe/>}/>
-          <Route path='/games' element={<Games/>}/>
-          <Route path='/gameProjects' element={<GameProjects/>}/>
+          <Route path='/resume' element={<Resume/>}/>
         </Routes>
       </Router>
     </div>

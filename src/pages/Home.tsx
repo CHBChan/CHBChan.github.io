@@ -1,9 +1,9 @@
 import { ReactComponent as Portrait } from '../assets/portrait.svg';
 import { DiHtml5, DiCss3, DiJavascript, DiReact, DiPython, DiJava, DiDatabase, DiGit  } from "react-icons/di";
-import { SiCplusplus, SiCsharp } from "react-icons/si";
+import { SiCplusplus, SiCsharp, SiTypescript } from "react-icons/si";
+import { Link } from "react-router-dom";
 
 function Home() {
-
     return (
 
         <div className='pageContent flex flex-col justify-center gap-16 mx-8'>
@@ -21,11 +21,11 @@ function Home() {
                             I like creating things. <br/>
                             In case it isn't obvious, I'm not proficient in graphic design.
                         </p>
-                        <a href='src/assets/ChingHangBennyChan-Resume.pdf' download>
+                        <Link to={'/resume'}>
                             <button className='mt-8 px-4 py-4 border rounded shadow text-2xl'>
-                                Download My Resume
+                                Check out my resume
                             </button>
-                        </a>
+                        </Link>
                     </div>
                     <span className='basis-1/4'></span>
                 </div>
@@ -37,6 +37,7 @@ function Home() {
                         [DiHtml5, 'HTML5'],
                         [DiCss3, 'CSS3'],
                         [DiJavascript, 'Javascript'],
+                        [SiTypescript, 'Typescript'],
                         [DiReact, 'React'],
                         [DiPython, 'Python'],
                         [DiJava, 'Java'],
