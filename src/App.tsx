@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import { useState } from 'react';
 
 import Home from './pages/Home';
 import MyProjects from './pages/MyProjects';
@@ -23,7 +22,6 @@ const linkList : linkInfo[] = [
 ];
 
 function App() {
-  const [currLink, setCurrLink] = useState<string>('/');
 
   return (
     <div className='mainContent'>
@@ -31,7 +29,7 @@ function App() {
         <nav className='navBar flex gap-8 items-center justify-center mx-4 my-4'>
           {linkList.map((linkI : linkInfo, index : number) => {
             return (
-              <Link className='font-bold text-2xl border-b-2 border-transparent hover:border-orange-400' to={linkI.path}>{linkI.title}</Link>
+              <Link key={'link' + index} className='font-bold text-2xl border-b-2 border-transparent hover:border-orange-400' to={linkI.path}>{linkI.title}</Link>
             )
           })}
         </nav>

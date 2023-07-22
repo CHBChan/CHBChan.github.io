@@ -1,9 +1,6 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
-import { useNavigate } from 'react-router-dom'
 
 function AboutMe() {
-
-    const navigate = useNavigate();
 
     return (
 
