@@ -4,7 +4,7 @@ function GameProjectCard(props : any) {
   return (
     <div className='card flex flex-col items-center'>
       <div className='flex flex-row gap-4 items-center mb-4'>
-        <p className="text-bold text-2xl">
+        <p className="text-bold text-left text-2xl">
           {props.index + 1 + '. ' + props.projectTitle}
         </p>
       </div>

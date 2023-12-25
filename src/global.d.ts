@@ -8,7 +8,8 @@ declare global {
 
     interface GitProject {
         projectTitle: string,
-        gitLink: string,
+        gitLink?: string,
+        playLink?: string,
         projectImage: string,
         projectDesc1: string,
         projectDesc2: string

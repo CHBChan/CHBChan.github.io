@@ -28,7 +28,8 @@ function MyProjects() {
                   <GitProjectCard 
                     index={index}
                     projectTitle={project.projectTitle}
-                    gitLink={project.gitLink} 
+                    gitLink={project.gitLink}
+                    playLink={project.playLink}
                     projectImage={project.projectImage}
                     projectDesc1={project.projectDesc1}
                     projectDesc2={project.projectDesc2} />

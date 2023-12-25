@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import MyProjects from './pages/MyProjects';
 import AboutMe from './pages/AboutMe';
-import Resume from './pages/Resume';
 import '@fontsource/pangolin';
 
 const linkList : linkInfo[] = [
@@ -37,7 +36,6 @@ function App() {
           <Route path='/*' element={<Home/>}/>
           <Route path='/myprojects' element={<MyProjects/>}/>
           <Route path='/aboutme' element={<AboutMe/>}/>
-          <Route path='/resume' element={<Resume/>}/>
         </Routes>
       </Router>
     </div>

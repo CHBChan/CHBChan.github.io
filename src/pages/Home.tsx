@@ -1,6 +1,6 @@
 import { ReactComponent as Portrait } from '../assets/portrait.svg';
-import { DiHtml5, DiCss3, DiJavascript, DiReact, DiPython, DiJava, DiDatabase, DiGit  } from "react-icons/di";
-import { SiCplusplus, SiCsharp, SiTypescript } from "react-icons/si";
+import { DiHtml5, DiCss3, DiJavascript, DiReact, DiPython, DiJava, DiDatabase, DiGit, DiDart, DiMongodb  } from "react-icons/di";
+import { SiCplusplus, SiCsharp, SiFlutter, SiTypescript } from "react-icons/si";
 import { Link } from "react-router-dom";
 
 function Home() {
@@ -21,7 +21,7 @@ function Home() {
                             I like creating things. <br/>
                             In case it isn't obvious, I'm not proficient in graphic design.
                         </p>
-                        <Link to={'/resume'}>
+                        <Link to={'https://docs.google.com/document/d/1668YNFnsScb33M29lsK4J957usEoGvzYWsspc5gNkFQ/edit?usp=sharing'} target='_blank'>
                             <button className='mt-8 px-4 py-4 border rounded shadow text-2xl'>
                                 Check out my resume
                             </button>
@@ -44,7 +44,10 @@ function Home() {
                         [SiCplusplus, 'C++'],
                         [SiCsharp, 'C#'],
                         [DiDatabase, 'SQL'],
+                        [DiMongodb, 'MongoDB'],
                         [DiGit, 'Git'],
+                        [DiDart, 'Dart'],
+                        [SiFlutter, 'Flutter'],
                     ].map(([Icon, label]) => (
                         <div className='flex flex-col justify-center items-center border-2 border-solid border-black rounded-xl aspect-square'>
                             <Icon size={70}/>

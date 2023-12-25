@@ -1,26 +1,50 @@
 import vigilantes from '../assets/vigilantes.png';
 import confessional from '../assets/confessional.png';
+import mythicemporium from '../assets/mythicemporium.png';
+import tome from '../assets/tome.png';
+import graphicgenerator from '../assets/graphicgenerator.png';
 
 const GitList: GitProject[] = [
     {
-        projectTitle: 'Vigilantes',
+        projectTitle: 'Vigilantes (2021)',
         gitLink: 'https://github.com/wassinkl/Vigilantes',
         projectImage: vigilantes,
         projectDesc1: 'This project was completed for my mobile development course in university with six other members. Vigilantes was coded in Kotlin for Android and targeted towards law enforcement officers to help them record automotive incidents through the usage of machine learning.',
         projectDesc2: 'My role in this project was the lead frontend developer. I worked on the data structures necessary for the project to succeed, in addition to contributing to the design of the application\'s UI. Beyond that, I also collaborated with other members to ensure that the backend connected to the frontend.'
     },
     {
-        projectTitle: 'Confessional',
+        projectTitle: 'Confessional (2023)',
         gitLink: 'https://github.com/CHBChan/confessional-client',
         projectImage: confessional,
         projectDesc1: 'This was a personal fullstack project I completed to learn more about backend development. Users of this website are able to submit their own confessions to be stored in the backend. They are also given the option to view random confessions retrieved from the server.',
         projectDesc2: 'The frontend was developed using React and communicated with the server via the Axios library. The backend was developed using Node.js and Express. The user inputs are stored into a PostgreSQL database with the use of the Sequelize library.'
+    },
+    {
+        projectTitle: 'Mythic Emporium (2023)',
+        gitLink: 'https://github.com/CHBChan/mythic-emporium',
+        projectImage: mythicemporium,
+        projectDesc1: 'This is the next step up from my previous barebone fullstack project. I\'ve utilized the knowledge I learned previously to create this e-commerce website. Since I am not actually selling anything, this website features fictitious products such as Minotaur Hide. My favorite feature of this project is the fully functional embedded inventory management system that is admin-accessible.',
+        projectDesc2: 'This project was developed using Next.js and communicate via the Axios library. The admin credentials and product data are stored in a MongoDB database.'
+    },
+    {
+        projectTitle: 'Grand Archive: Tome (2023)',
+        playLink: 'https://play.google.com/store/apps/details?id=com.four.ga_tome',
+        projectImage: tome,
+        projectDesc1: 'This mobile project serves as a companion app for the Grand Archive TCG, featuring a life counter, card database, and more. ',
+        projectDesc2: 'This project was developed using Flutter coded in Dart. The API is accessed through the HTTP package and the states are managed using the riverpod package. I learned a lot working on this project such as state management and developing modular widgets.'
+    },
+    {
+        projectTitle: 'Grand Archive Graphic Generator (2023)',
+        gitLink: 'https://github.com/CHBChan/ga-graphic-generator',
+        projectImage: graphicgenerator,
+        projectDesc1: 'This project allows users to combine two card images and download the resulting image from the Grand Archive TCG.',
+        projectDesc2: 'This project was developed using Next.js and styled with Tailwind. Overall this project is fairly simple, but it was still interesting to learn image manipulation in Javascript.'
     }
 ];
 
 const GameList: GameProject[] = [
     {
-        projectTitle: 'The Legend of Zelda - The Eagle Dungeon Recreation',
+        projectTitle: 'The Legend of Zelda - The Eagle Dungeon Recreation (2022)',
         projectDesc: 'This project was a recreation of the first dungeon of The Legend of Zelda for the NES. It was co-developed with Ninad Chavan using the Unity Engine.',
         projectResources: [
             {
@@ -54,7 +78,7 @@ const GameList: GameProject[] = [
         }
     },
     {
-        projectTitle: 'Insanity',
+        projectTitle: 'Insanity (2022)',
         projectDesc: 'This project was an individual project I developed using the Unity Engine. Insanity was intended to be a Roguelike Auto Battler, but unfortunately my game design skills were a little too inadequate in executing the game to a satisfactory state.',
         projectResources: [
             {
@@ -96,7 +120,7 @@ const GameList: GameProject[] = [
         }
     },
     {
-        projectTitle: 'Midnight Madness',
+        projectTitle: 'Midnight Madness (2022)',
         projectDesc: 'This project was developed using the Unity Engine in collaboration with Robert Grasinki, Andrew Myers, and Ninad Chavan. Midnight Madness is a 2D horror-survival game that made use of light mechanics. I was responsible for the game\'s level design and enemy movement AI.',
         projectResources: [
             {
